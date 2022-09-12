@@ -4,6 +4,9 @@ import { Component } from 'react';
 import Setstate from './Setstate';
 import Items from './components/Items';
 import Form from './components/Form';
+import Complife from './components/Complife';
+
+
 
 class App extends Component {
  //arow function 
@@ -41,7 +44,7 @@ class App extends Component {
   render(){
     return (
     <div className="App">
-      hello react
+      {/* hello react
       <Items item={this.state.items}/><br/>
       -------------------------------
       <Child/> <br/>
@@ -59,6 +62,9 @@ class App extends Component {
       <Setstate/><br/>
       --------------------------------
       <Form/><br/>
+      -------------------------------- */}
+      <Complife/><br/>
+
      </div>
      );
   }
