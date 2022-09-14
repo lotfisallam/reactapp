@@ -6,6 +6,11 @@ import Items from './components/Items';
 import Form from './components/Form';
 import Complife from './components/Complife';
 
+import Nav from './components/routingex/Nav';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from './components/routingex/Home';
+import About from './components/routingex/About';
+
 
 
 class App extends Component {
@@ -43,6 +48,7 @@ class App extends Component {
       } 
   render(){
     return (
+    <BrowserRouter>
     <div className="App">
       {/* hello react
       <Items item={this.state.items}/><br/>
@@ -62,10 +68,19 @@ class App extends Component {
       <Setstate/><br/>
       --------------------------------
       <Form/><br/>
-      -------------------------------- */}
-      <Complife/><br/>
+      --------------------------------
+      <Complife/><br/> */}
+      
+      
 
+      
+      <Nav/>
+      <Routes>
+      <Route path="/" element ={<Home/>}/>
+      <Route path="/about" element ={<About/>}/>
+      </Routes>
      </div>
+     </BrowserRouter>
      );
   }
   
